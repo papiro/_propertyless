@@ -1,0 +1,21 @@
+# _private
+## truly private data for classes/instances
+
+### Usage:
+```
+  const _ = require('_private')
+
+  class Foo {
+    constructor (param1, param2) {
+      Object.assign(_(this), {
+        param1,
+        param2
+      })
+    }
+
+    myMethod () {
+      const { param1, param2 } = _(this)
+    }
+  }
+
+Voila!
