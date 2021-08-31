@@ -1,9 +1,10 @@
-# _private
-## truly private data for classes/instances
+# _propertyless
+## truly propertyless class instances
 
 ### Usage:
+
 ```
-  const _ = require('_private')
+  const _ = require('_propertyless')
 
   class Foo {
     constructor (param1, param2) {
